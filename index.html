@@ -5,24 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background: fixed no-repeat url(Group1.png) left/40%
-        }
-    </style>
+    <title>landing</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <form action="https://formsubmit.co/vleygel@gmail.com" method="POST">
-        <label for="fname"></label>
-        <input type="text" name="fname" id="">
-        <label for="email"></label>
-        <input type="text" name="email" id="">
-        <label for="fname"></label>
-        <input type="text" name="phone" id="">
-        <button>send</button>
-    </form>
+    <div class="background"></div>
+    <header class="flex space-between container">
+        <div class="logo"></div>
+        <nav>
+            <ul class="clean-list">
+                <a href="">
+                    <li>sign up</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="lorem">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consequuntur, optio voluptatem quasi tempore minima reiciendis quam, animi, et sapiente facere debitis provident. Minima adipisci perferendis maiores quia, sequi quibusdam.</p>
+    </div>
+    <div class="contactForm">
+        <form action="https://formsubmit.co/vleygel@gmail.com" method="POST" class="mainForm flex column">
+            <div class="inputBlock">
+                <input type="text" name="fullName" id="" placeholder="full name" required>
+            </div>
+            <div class="inputBlock">
+                <input type="text" name="email" id="" placeholder="email" required>
+            </div>
+            <button class="btn">send</button>
+        </form>
+    </div>
+
+    <footer>
+        <ul class="clean-list">
+            <li> <a href="">facebook</a></li>
+            <li> <a href="">instagram</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
