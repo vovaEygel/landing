@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Raleway-Black";
+    src: url("../assets/fonts/Raleway/Raleway-Black.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-BlackItalic";
+    src: url("../assets/fonts/Raleway/Raleway-BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Bold.ttf";
+    src: url("../assets/fonts/Raleway/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-BoldItalic.ttf";
+    src: url("../assets/fonts/Raleway/Raleway-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraBold";
+    src: url("../assets/fonts/Raleway/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraBoldItalic";
+    src: url("../assets/fonts/Raleway/Raleway-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraLight";
+    src: url("../assets/fonts/Raleway/Raleway-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraLightItalic";
+    src: url("../assets/fonts/Raleway/Raleway-ExtraLightItalic.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Italic";
+    src: url("../assets/fonts/Raleway/Raleway-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("../assets/fonts/Raleway/Raleway-Light.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-LightItalic";
+    src: url("../assets/fonts/Raleway/Raleway-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url("../assets/fonts/Raleway/Raleway-Medium.ttf");
+}

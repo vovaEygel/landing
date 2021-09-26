@@ -14,34 +14,60 @@
     <header class="flex space-between container">
         <div class="logo"></div>
         <nav>
-            <ul class="clean-list">
-                <a href="">
-                    <li>sign up</li>
-                </a>
-            </ul>
+            <button class="signBtn">Sign up</button>
         </nav>
     </header>
-    <div class="lorem">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consequuntur, optio voluptatem quasi tempore minima reiciendis quam, animi, et sapiente facere debitis provident. Minima adipisci perferendis maiores quia, sequi quibusdam.</p>
+    <div class="aboveTheFold flex space-between">
+        <div class="lorem">
+            <h1>A simple landing page</h1>
+            <p>Lorem ipsum dolor sit ametw consectetur adipisicing elit. Fugit consequuntur, optio voluptatem quasi tempore minima reiciendis quam, animi, et sapiente facere debitis provident. Minima adipisci perferendis maiores quia, sequi quibusdam.</p>
+        </div>
+        <div class="contactForm">
+            <form action="https://formsubmit.co/vleygel@gmail.com" method="POST" class="mainForm flex column space-between">
+                <h2>How can we contact you?</h2>
+                <div class="inputs">
+                    <div class="form-group">
+                        <input type="text" name="fullName" id="mainForm" placeholder="full name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" id="" placeholder="email" required>
+                    </div>
+                </div>
+                <button class="btn">send</button>
+            </form>
+        </div>
+        <div class="image">
+            <img src="/assets/smoke.png" alt="">
+        </div>
     </div>
-    <div class="contactForm">
-        <form action="https://formsubmit.co/vleygel@gmail.com" method="POST" class="mainForm flex column">
-            <div class="inputBlock">
-                <input type="text" name="fullName" id="" placeholder="full name" required>
-            </div>
-            <div class="inputBlock">
-                <input type="text" name="email" id="" placeholder="email" required>
-            </div>
-            <button class="btn">send</button>
-        </form>
+    <div class="cards">
+        <div class="card">
+            <img src="/assets/undraw_Online_payments_re_y8f2.svg" alt="">
+            <h3>title1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit esse aliquam minus deserunt non illo labore error repudiandae maiores ullam illum perferendis, ipsum saepe quas ratione similique. Deserunt, aliquam reprehenderit.</p>
+        </div>
+        <div class="card">
+            <img src="/assets/undraw_Online_payments_re_y8f2.svg" alt="">
+            <h3>title1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit esse aliquam minus deserunt non illo labore error repudiandae maiores ullam illum perferendis, ipsum saepe quas ratione similique. Deserunt, aliquam reprehenderit.</p>
+        </div>
+        <div class="card">
+            <img src="/assets/undraw_Online_payments_re_y8f2.svg" alt="">
+            <h3>title1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit esse aliquam minus deserunt non illo labore error repudiandae maiores ullam illum perferendis, ipsum saepe quas ratione similique. Deserunt, aliquam reprehenderit.</p>
+        </div>
     </div>
-
-    <footer>
-        <ul class="clean-list">
-            <li> <a href="">facebook</a></li>
-            <li> <a href="">instagram</a></li>
+    <!-- <footer>
+        <ul class="clean-list socials flex">
+            <li>
+                <a href="https://www.facebook.com/vaigel" target="_blank" class="facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/eygel.v" target="_blank" class="instagram"></a>
+            </li>
         </ul>
-    </footer>
+    </footer> -->
+    <script src="script.js"></script>
 </body>
 
 </html>

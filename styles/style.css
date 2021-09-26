@@ -3,8 +3,9 @@
 @import url(navbar.css);
 @import url(font.css);
 @import url(color.css);
+@import url(typography.css);
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Raleway-medium";
     background-image: url(../assets/Group1.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -16,46 +17,103 @@ body {
 .background {
     background-image: linear-gradient(to bottom, grey, black);
     background-position: left;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -997;
     opacity: 0.3;
-    height: 100vh;
+    height: 100%;
 }
 
+.signBtn {
+    background: transparent;
+    border: 1px solid #8dbdbd;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #737373;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 44px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
 
-/* header {} */
+.signBtn:hover,
+.signBtn:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #000;
+}
+
+.signBtn:active {
+    opacity: .5;
+}
+
+.aboveTheFold {
+    display: flex;
+    height: 65vh;
+    margin-bottom: 10%;
+    /* max-width: 1600px; */
+    margin: 0 0 10% 10%;
+}
 
 footer {
-    position: absolute;
+    position: fixed;
     background-color: #1b1b1b;
-    display: block;
     width: 100%;
     color: #fff;
     padding: 20px 0;
     bottom: 0;
-    opacity: 0.7;
+    opacity: 0.9;
+    height: 80px;
+}
+
+.contactForm {
+    align-self: flex-end;
+}
+
+.contactForm h2 {
+    padding-left: 30px;
 }
 
 .lorem {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    max-width: 500px;
+    max-width: 450px;
+    align-self: end;
+}
+
+.lorem h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
 }
 
 .lorem p {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
 }
 
+nav {
+    align-self: center;
+}
+
 footer .clean-list {
     padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 section {
@@ -65,7 +123,8 @@ section {
 
 input[type="text"] {
     border: 0;
-    border-radius: 5px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container {
@@ -74,10 +133,10 @@ input[type="text"] {
 }
 
 .logo {
-    width: 150px;
-    height: 100px;
+    width: 220px;
+    height: 140px;
     text-align: center;
-    background-image: url(../assets/logo.png);
+    background-image: url(../assets/logo3.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -88,22 +147,22 @@ input[type="text"] {
     max-width: 400px;
     margin: 0 auto;
     background-color: #8dbdbd;
-    padding: 10px;
-    height: 200px;
+    padding: 30px 0;
+    height: 170px;
     width: 400px;
     border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.inputBlock input {
-    padding: 5px;
+.form-group {
+    margin: 10px auto;
+    text-align: center;
 }
 
-.inputBlock {
-    margin: 10px 10px 10px 0;
+.form-group input {
+    padding: 8px 15px;
+    width: 250px;
 }
-
-
-/* CSS */
 
 .btn {
     background-color: #c2fbd7;
@@ -121,9 +180,104 @@ input[type="text"] {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .btn:hover {
     box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
     transform: scale(1.05);
+}
+
+.image {
+    align-self: end;
+}
+
+.cards {
+    width: calc(100% - 30px);
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-bottom: 80px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.socials li {
+    max-width: 96px;
+    height: auto;
+    display: inline-block;
+}
+
+.instagram {
+    background-image: url(../assets/instagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    display: block;
+    width: 96px;
+    height: 96px;
+}
+
+.facebook {
+    background-image: url(../assets/facebook.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    display: block;
+    width: 96px;
+    height: 96px;
+}
+
+@media (max-width:996px) {
+    .contactForm {
+        align-self: auto;
+        margin-top: 30px;
+    }
+    .aboveTheFold {
+        flex-direction: column;
+        margin: 0 auto;
+        height: auto;
+    }
+    .image img {
+        max-width: 360px;
+        overflow: hidden;
+    }
+    .lorem {
+        font-size: 16px;
+        width: calc(100% - 30px);
+    }
+    .lorem p {
+        font-size: 16px;
+    }
+    .mainForm {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+    .logo {
+        max-width: 121px;
+        height: 100px;
+        margin-left: 10px;
+    }
+    .signBtn {
+        display: none;
+    }
 }
