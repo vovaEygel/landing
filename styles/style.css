@@ -11,7 +11,7 @@ body {
     background-size: contain;
     background-position: left;
     background-attachment: fixed;
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .background {
@@ -71,12 +71,10 @@ body {
 }
 
 footer {
-    position: fixed;
     background-color: #1b1b1b;
     width: 100%;
     color: #fff;
     padding: 20px 0;
-    bottom: 0;
     opacity: 0.9;
     height: 80px;
 }
@@ -114,6 +112,7 @@ footer .clean-list {
     padding: 0 20px;
     margin: 0 auto;
     text-align: center;
+    justify-content: center;
 }
 
 section {
@@ -199,7 +198,8 @@ input[type="text"] {
     margin: 0 auto;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 30px;
 }
 
 .card {
@@ -208,16 +208,27 @@ input[type="text"] {
     justify-content: center;
     align-items: center;
     background: transparent;
-    color: #fff;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     height: 100%;
     width: 100%;
     border-radius: 4px;
-    transition: all 500ms;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.card img {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.card h3 {
+    margin-top: 30px;
+}
+
+.card p {
+    padding: 20px;
 }
 
 .socials li {
