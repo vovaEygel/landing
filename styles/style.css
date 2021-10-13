@@ -11,7 +11,6 @@ body {
     background-size: contain;
     background-position: left;
     background-attachment: fixed;
-    /* height: 80vh; */
 }
 
 .background {
@@ -76,7 +75,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     opacity: 0.9;
-    height: 80px;
+    height: 60px;
 }
 
 .contactForm {
@@ -270,14 +269,18 @@ div.form-group input:focus+label.placeholder {
     display: inline-block;
 }
 
+.instagram,
+.facebook {
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
 .instagram {
     background-image: url(../assets/instagram.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: initial;
-    display: block;
-    width: 96px;
-    height: 96px;
 }
 
 .facebook {
@@ -285,9 +288,6 @@ div.form-group input:focus+label.placeholder {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: initial;
-    display: block;
-    width: 96px;
-    height: 96px;
 }
 
 @media (max-width:996px) {
@@ -321,7 +321,9 @@ div.form-group input:focus+label.placeholder {
         margin-left: 10px;
     }
     .signBtn {
-        display: none;
+        padding: 10px 23px;
+        margin-right: 20px;
+        font-size: 15px;
     }
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

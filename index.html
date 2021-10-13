@@ -23,7 +23,7 @@
             <p>Lorem ipsum dolor sit ametw consectetur adipisicing elit. Fugit consequuntur, optio voluptatem quasi tempore minima reiciendis quam, animi, et sapiente facere debitis provident. Minima adipisci perferendis maiores quia, sequi quibusdam.</p>
         </div>
         <div class="contactForm">
-            <form action="https://formsubmit.co/vleygel@gmail.com" method="POST" class="mainForm flex column space-between">
+            <form name="mainForm" action="https://formsubmit.co/vleygel@gmail.com" method="POST" class="mainForm flex column space-between" onsubmit="return(validate());">
                 <h2>How can we contact you?</h2>
                 <div class="inputs">
                     <div class="form-group">
@@ -35,7 +35,7 @@
                         <label class="placeholder" for="email">email</label>
                     </div>
                 </div>
-                <button class="btn">send</button>
+                <button class="btn" onclick="submit(e)">send</button>
             </form>
         </div>
         <div class="image">
